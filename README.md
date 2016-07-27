@@ -8,4 +8,4 @@ The Generated APK is all you need to give them.
 * Figure out how the app is taking the decimal ASCII converting it to HEX and then to string and formulate the flag
 
 ###KEY
-* The Key is “clever you are, Ha3k0r :)”. 
+* The Key is “e1192d27265d0754f9482fbbe0b8bb165c4f2144”. 
