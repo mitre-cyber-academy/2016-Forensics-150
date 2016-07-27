@@ -81,7 +81,7 @@ public class Authenticator extends Activity {
             int[] arr = r.getIntArray(R.array.sec_ints);
             String hexStr = "";
             for (int i = 0; i < arr.length; i++) {
-                hexStr += Integer.toHexString(arr[i]);
+                hexStr += Integer.toHexString(arr[i] - 1);
             }
             StringBuilder output = new StringBuilder();
             for (int i = 0; i < hexStr.length(); i += 2) {
