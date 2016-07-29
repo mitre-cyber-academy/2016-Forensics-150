@@ -40,7 +40,7 @@ The Generated APK is all you need to give them.
 
 ##Another way to solve:
 Go into Authenticator/res/values and find the user and password strings.
-   * The strings are encrypted but can be decrypted and then used when the app is launched.
+   * The strings are encrypted but can be decrypted and then used as the username and password when the app is launched.*
 
 
 ###KEY
