@@ -43,12 +43,14 @@ public class Authenticator extends Activity {
                 } catch (Exception e) {
                     Log.e("APP", e.toString());
                 }
-                if (dec_user != null && dec_pass != null) {
+                if (dec_user != null && dec_pass != null && dec_user != "" && dec_pass != "") {
                     if (dec_user.equals(username) && dec_pass.equals(password)) {
                         sendBroadcast();
                     } else {
                         Toast.makeText(getApplicationContext(), "Thou are not a Hac30r :(", Toast.LENGTH_LONG).show();
                     }
+                } else {
+                        Toast.makeText(getApplicationContext(), "Thou are not a Hac30r :(", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -81,7 +83,7 @@ public class Authenticator extends Activity {
             int[] arr = r.getIntArray(R.array.sec_ints);
             String hexStr = "";
             for (int i = 0; i < arr.length; i++) {
-                hexStr += Integer.toHexString(arr[i] - 1);
+                hexStr += Integer.toHexString(arr[i] - i);
             }
             StringBuilder output = new StringBuilder();
             for (int i = 0; i < hexStr.length(); i += 2) {
